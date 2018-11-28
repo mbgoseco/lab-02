@@ -27,10 +27,10 @@ Actual time needed to complete: 2 hours 40 minutes
 
 ## Number and name of feature: Feature #3: Style the application
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 30 minutes
 
-Start time: _____
+Start time: 3:00 PM
 
-Finish time: _____
+Finish time: 3:30 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 minutes
