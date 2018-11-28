@@ -9,6 +9,7 @@ function Animal(animal) {
 }
 
 Animal.allAnimals = [];
+let options = [];
 
 Animal.prototype.render = function() {
   $('main').append('<div class="clone"></div>');
@@ -18,9 +19,16 @@ Animal.prototype.render = function() {
 
   animalClone.find('h2').text(this.title);
   animalClone.find('img').attr('src', this.image_url);
+  animalClone.find('img').attr('alt', this.title);
+  animalClone.find('img').addClass(this.keyword);
   animalClone.find('figcaption').text(this.description);
-  animalClone.find('p').text(this.horns);
+  animalClone.find('p').text(`Horns: ${this.horns}`);
   animalClone.removeClass('clone');
+
+  if (options.indexOf(this.keyword) === -1) {
+    options.push(this.keyword);
+    $('select').append(`<option value="${this.keyword}">${this.keyword}</option>`);
+  }
 }
 
 Animal.readJSON = () => {
@@ -30,12 +38,16 @@ Animal.readJSON = () => {
         Animal.allAnimals.push(new Animal(obj))
       })
     })
-  
     .then(Animal.loadAnimals)
-} 
+}
 
 Animal.loadAnimals = () => {
   Animal.allAnimals.forEach(animal => animal.render());
-}  
+}
 
-$(() => Animal.readJSON());
+$('select').on('click', 'option', function(){
+  let selection = this.val();
+  $(`img[class="${selection}"`).hide();
+});
+
+$(() => Animal.readJSON())
