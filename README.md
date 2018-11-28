@@ -16,13 +16,13 @@ Actual time needed to complete: One hour and five minutes.
 
 ## Number and name of feature: Feature #2: Filter images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 11:15 AM
 
-Finish time: _____
+Finish time: DNF
 
-Actual time needed to complete: _____
+Actual time needed to complete: N/A
 
 
 ## Number and name of feature: Feature #3: Style the application
