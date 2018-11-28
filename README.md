@@ -5,13 +5,13 @@ This project will demonstrate DOM traversal and manipulation through the use of 
 
 ## Number and name of feature: Feature #1: Display images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 9:55 AM
 
-Finish time: _____
+Finish time: 11:00 AM
 
-Actual time needed to complete: _____
+Actual time needed to complete: One hour and five minutes.
 
 
 ## Number and name of feature: Feature #2: Filter images
