@@ -20,9 +20,9 @@ Estimate of time needed to complete: 1 hour
 
 Start time: 11:15 AM
 
-Finish time: DNF
+Finish time: 2:55 PM
 
-Actual time needed to complete: N/A
+Actual time needed to complete: 2 hours 40 minutes
 
 
 ## Number and name of feature: Feature #3: Style the application

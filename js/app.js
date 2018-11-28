@@ -45,9 +45,15 @@ Animal.loadAnimals = () => {
   Animal.allAnimals.forEach(animal => animal.render());
 }
 
-$('select').on('click', 'option', function(){
-  let selection = this.val();
-  $(`img[class="${selection}"`).hide();
+$('select').on('change', function() {
+  console.log($(this).val());
+  console.log(this);
+  let selection = $(this).val();
+  $('div').hide();
+  $(`img[class="${selection}"`).parent().show();
+  if ($(this).val() === 'default') {
+    $('div').show();
+  }
 });
 
 $(() => Animal.readJSON())
